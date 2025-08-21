@@ -198,7 +198,7 @@
       timeOver = false;
       clearInterval(timerId);
 
-      shuffledQuestions = [...questions].sort(() => 0.5 - Math.random()).slice(0, 27);
+      shuffledQuestions = [...questions].sort(() => 0.5 - Math.random());
       totalSeconds = shuffledQuestions.length * 8;
       timeLeft = totalSeconds;
 
